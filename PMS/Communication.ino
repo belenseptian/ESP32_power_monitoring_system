@@ -21,7 +21,7 @@ void sendtoServer()
     sending();
     HTTPClient http;
 
-    String serverPath = serverName + "?api_key=CU52P30JDUUVEJ3W&field1="+String(getVoltage(0))+"&field2="+String(getVoltage(1))+"&field3="+String(getVoltage(2))+"&field4="+String(getCurrent(0))+"&field5="+String(getCurrent(1))+"&field6="+String(getCurrent(2));
+    String serverPath = serverName + "?api_key=CU52P30JDUUVEJ3W&field1="+String(getVoltage(0))+"&field2="+String(getVoltage(1))+"&field3="+String(getVoltage(2))+"&field4="+String(getCurrent(0))+"&field5="+String(getCurrent(1))+"&field6="+String(getCurrent(2))+"&field7="+String(getPower(0, 0))+"&field8="+String(getPower(2, 2));                         
     
     // Your Domain name with URL path or IP address with path
     http.begin(serverPath.c_str());
