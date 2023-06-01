@@ -14,5 +14,5 @@ double getCurrent(int no)
     current = ((2-(4.5-ADS1.toVoltage(val1[no])))/0.1)-0.3;
   }
 
-  return current+0.5;
+  return current+0.7;
 }
